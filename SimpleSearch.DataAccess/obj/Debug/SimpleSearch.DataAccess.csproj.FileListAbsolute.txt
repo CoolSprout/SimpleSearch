@@ -1,0 +1,10 @@
+c:\users\sugar\documents\visual studio 2015\Projects\SimpleSearch\SimpleSearch.DataAccess\bin\Debug\SimpleSearch.DataAccess.dll.config
+c:\users\sugar\documents\visual studio 2015\Projects\SimpleSearch\SimpleSearch.DataAccess\bin\Debug\SimpleSearch.DataAccess.dll
+c:\users\sugar\documents\visual studio 2015\Projects\SimpleSearch\SimpleSearch.DataAccess\bin\Debug\SimpleSearch.DataAccess.pdb
+c:\users\sugar\documents\visual studio 2015\Projects\SimpleSearch\SimpleSearch.DataAccess\bin\Debug\EntityFramework.dll
+c:\users\sugar\documents\visual studio 2015\Projects\SimpleSearch\SimpleSearch.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\sugar\documents\visual studio 2015\Projects\SimpleSearch\SimpleSearch.DataAccess\bin\Debug\EntityFramework.xml
+c:\users\sugar\documents\visual studio 2015\Projects\SimpleSearch\SimpleSearch.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\sugar\documents\visual studio 2015\Projects\SimpleSearch\SimpleSearch.DataAccess\obj\Debug\SimpleSearch.DataAccess.csprojResolveAssemblyReference.cache
+c:\users\sugar\documents\visual studio 2015\Projects\SimpleSearch\SimpleSearch.DataAccess\obj\Debug\SimpleSearch.DataAccess.dll
+c:\users\sugar\documents\visual studio 2015\Projects\SimpleSearch\SimpleSearch.DataAccess\obj\Debug\SimpleSearch.DataAccess.pdb
