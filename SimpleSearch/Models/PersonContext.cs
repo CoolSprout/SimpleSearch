@@ -17,8 +17,8 @@ namespace SimpleSearch.DataAccess.Context
         List<Person> persons = new List<Person>();
         public PersonDBInitializer()
         {
-            persons.Add(new Person { FirstName = "Raja", LastName = "kayal", Address = "123 Street, NYC", Age = 35, Intrest = "Movies" });
-            persons.Add(new Person { FirstName = "Kingston", LastName = "bar", Address = "123 Street, CNT", Age = 35, Intrest = "Songs" });
+            //    persons.Add(new Person { FirstName = "Raja", LastName = "kayal", Address = "123 Street, NYC", Age = 35, Intrest = "Movies" });
+            //    persons.Add(new Person { FirstName = "Kingston", LastName = "bar", Address = "123 Street, CNT", Age = 35, Intrest = "Songs" });
         }
         protected override void Seed(PersonContext context)
         {

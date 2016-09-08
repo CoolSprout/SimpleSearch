@@ -1,74 +1,17 @@
-﻿@model MySearchApp.Models.Entities.Person
-
+﻿
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
+@section Scripts
+{
+<script src="~/Scripts/angular.min.js"></script>
+<script src="~/Scripts/angular-route.min.js"></script>
+<script src="~/Scripts/Search/app-search.js"></script>
+<script src="~/Scripts/Search/searchController.js"></script>
+<script src="~/Scripts/Search/SimpleControls.js"></script>
+    }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>View</title>
-</head>
-<body>
-    <div>
-        <h4>Person</h4>
-        <hr />
-        <dl class="dl-horizontal">
-            <dt>
-                @Html.DisplayNameFor(model => model.FirstName)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.FirstName)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.LastName)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.LastName)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.Address)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Address)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.Age)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Age)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.Intrest)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Intrest)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.Photo)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.Photo)
-            </dd>
-    
-        </dl>
-    </div>
-    <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-        @Html.ActionLink("Back to List", "Index")
-    </p>
-</body>
-</html>
+   
+<div class="row" ng-app="app-search">
+    <div ng-view></div>
+</div>

@@ -22,6 +22,6 @@ namespace MySearchApp.Models.Entities
 
         public string Intrest { get; set; }
 
-        public byte[] Photo { get; set; }
+        public string Photo { get; set; }
     }
 }

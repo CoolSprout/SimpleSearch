@@ -16,12 +16,12 @@ namespace SimpleSearch.DataAccess.Repository
             }
         }
 
-        public List<Person> GetPersons()
+        public List<Person> GetPersons(string searchText)
         {
             List<Person> Persons = new List<Person>();
             using (var db = new PersonContext())
             {
-                Persons = db.Persons.AsEnumerable().Select(p => p).ToList();
+                Persons = db.Persons.AsEnumerable().Where(o => o.FirstName.ToUpper().Contains(searchText.ToUpper()) || o.LastName.ToUpper().Contains(searchText.ToUpper())).ToList();
             }
             return Persons;
         }

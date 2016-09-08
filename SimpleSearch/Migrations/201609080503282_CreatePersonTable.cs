@@ -17,7 +17,7 @@ namespace SimpleSearch.Migrations
                         Address = c.String(nullable: false),
                         Age = c.Int(nullable: false),
                         Intrest = c.String(),
-                        Photo = c.Binary(),
+                        Photo = c.String(),
                     })
                 .PrimaryKey(t => t.ID);
             

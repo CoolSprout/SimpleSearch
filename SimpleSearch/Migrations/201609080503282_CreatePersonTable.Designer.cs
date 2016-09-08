@@ -13,7 +13,7 @@ namespace SimpleSearch.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201609060458005_CreatePersonTable"; }
+            get { return "201609080503282_CreatePersonTable"; }
         }
         
         string IMigrationMetadata.Source
