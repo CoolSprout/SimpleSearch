@@ -1,4 +1,4 @@
-﻿using SimpleSearch.DataAccess.Repository;
+﻿using SimpleSearch.Models;
 using System.Threading;
 using System.Web.Mvc;
 
@@ -7,6 +7,12 @@ namespace SimpleSearch.Controllers
 {
     public class HomeController : Controller
     {
+        private IPersonRepository rep;
+        public HomeController(IPersonRepository rep)
+        {
+            this.rep = rep;
+        }
+
         public ActionResult Index()
         {
             return View();
@@ -16,7 +22,6 @@ namespace SimpleSearch.Controllers
         [HttpPost()]
         public JsonResult Search(string searchText)
         {
-            var rep = new PersonRepository();
             var persons = rep.GetPersons(searchText);
             //Delaying result by 3 seconds
             Thread.Sleep(3000);

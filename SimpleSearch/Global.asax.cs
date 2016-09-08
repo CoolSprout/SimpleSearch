@@ -10,6 +10,7 @@ namespace SimpleSearch
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+            UnityMvc5.Start();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
             System.Data.Entity.Database.SetInitializer(new DropCreateDatabaseIfModelChanges<PersonContext>());

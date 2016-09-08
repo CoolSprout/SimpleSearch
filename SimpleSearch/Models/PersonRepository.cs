@@ -1,20 +1,21 @@
 ﻿using MySearchApp.Models.Entities;
 using SimpleSearch.DataAccess.Context;
+using SimpleSearch.Models;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace SimpleSearch.DataAccess.Repository
 {
-    public class PersonRepository
+    public class PersonRepository : IPersonRepository
     {
-        public void AddPerson(Person user)
-        {
-            using (PersonContext CurrentContext = new PersonContext())
-            {
-                CurrentContext.Persons.Add(user);
-                CurrentContext.SaveChanges();
-            }
-        }
+        //public void AddPerson(Person user)
+        //{
+        //    using (PersonContext CurrentContext = new PersonContext())
+        //    {
+        //        CurrentContext.Persons.Add(user);
+        //        CurrentContext.SaveChanges();
+        //    }
+        //}
 
         public List<Person> GetPersons(string searchText)
         {
